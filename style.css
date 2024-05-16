@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(0, 0%, 95%);
+    min-width: 100vh;
+}
+.container{
+    display: flex;
+    max-width: 100vh;
+    justify-content: space-between;
+}
+
+.gridCommonStyle{
+    flex: 1;
+    padding: 40px;
+    /* min-width: 10rem; */
+}
+.grid1{
+    background-color: hsl(31, 77%, 52%);
+
+}
+.grid2{
+    background-color: hsl(184, 100%, 22%);
+
+}
+.grid3{
+    background-color: hsl(179, 100%, 13%);
+
+}
+.heading{
+    color:  hsl(0, 0%, 95%);
+    font-weight: bold;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.para{
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-bottom: 20px;
+    font-size: 15px;
+    line-height: 20px;
+}
+.button{
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+
+}
+/* Adjust margin between buttons */
+.gridCommonStyle .button + .button {
+    margin-left: 1rem; /* Adjust as needed */
+}
+.buttonOrange{
+    color: hsl(31, 77%, 52%);
+
+}
+.buttonCian{
+    color: hsl(184, 100%, 22%);
+
+}
+.ButtonDarkCian{
+    color: hsl(179, 100%, 13%);
+}
+
+.button:hover{
+    cursor: pointer;
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+.buttonOrange:hover{
+    background-color: hsl(31, 77%, 52%);
+}
+.buttonCian:hover{
+    background-color: hsl(184, 100%, 22%);
+}
+.ButtonDarkCian:hover{
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+/* @media all and (max-width: 2560px) and (min-width: 1440px){
+    .buttonOrange{
+        color: hsl(31, 77%, 52%);
+        margin-top: 2.5rem;
+    
+    }
+    .buttonCian{
+        color: hsl(184, 100%, 22%);
+        margin-top: 3rem;
+    
+    }
+    .ButtonDarkCian{
+        color: hsl(179, 100%, 13%);
+        margin-top: 4rem;
+    }
+}
+@media all and (max-width: 1440px) and (min-width: 1024px){
+    .buttonOrange{
+        color: hsl(31, 77%, 52%);
+        margin-top: 2.5rem;
+    
+    }
+    .buttonCian{
+        color: hsl(184, 100%, 22%);
+        margin-top: 2.5rem;
+    
+    }
+    .ButtonDarkCian{
+        color: hsl(179, 100%, 13%);
+        margin-top: 3.5rem;
+    }
+}
+@media all and (max-width: 1024px) and (min-width: 768px){
+    .buttonOrange{
+        color: hsl(31, 77%, 52%);
+        margin-top: 2.5rem;
+    
+    }
+    .buttonCian{
+        color: hsl(184, 100%, 22%);
+        margin-top: 2.5rem;
+    
+    }
+    .ButtonDarkCian{
+        color: hsl(179, 100%, 13%);
+        margin-top: 2rem;
+    }
+} */
+@media all and (max-width: 768px) and (min-width: 425px){
+    .container{
+        margin-right: 90px;
+        max-width: 80%;
+    }
+}
+@media all and (max-width: 425px) and (min-width: 0px){
+    .container{
+        flex-direction: column;
+        margin: 20px;
+    }
+}
